@@ -33,3 +33,4 @@ It helps track what you work on each day and can generate summaries using AI.
 dotnet run -- add "Fixed bug in API and updated docs"
 dotnet run -- list
 dotnet run -- summarize
+```
