@@ -2,7 +2,7 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             if (args.Length == 0)
             {
@@ -15,7 +15,14 @@
             switch (command)
             {
                 case "add":
-                    // TODO: Save entry to a local JSON file
+                    if (args.Length < 2)
+                    {
+                        Console.WriteLine("Usage: add <text>");
+                        return;
+                    }
+
+                    var service = new Services.JournalService();
+                    await service.AddEntryAsync(string.Join(' ', args[1..]));
                     Console.WriteLine("Added entry: " + string.Join(' ', args[1..]));
                     break;
                 case "list":

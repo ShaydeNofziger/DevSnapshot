@@ -16,7 +16,7 @@ It helps track what you work on each day and can generate summaries using AI.
 ## Roadmap
 
 ### MVP (Phase 1)
-- [ ] \`add\` command: append entry to a local JSON file
+- [x] \`add\` command: append entry to a local JSON file
 - [ ] \`list\` command: list all entries for today
 - [ ] \`summarize\` command: summarize today's entries using OpenAI
 
