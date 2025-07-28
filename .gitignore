@@ -1,8 +1,11 @@
 bin/
 obj/
+**/bin/
+**/obj/
 *.user
 *.swp
 *.suo
 *.vs/
 .vscode/
 *.DS_Store
+entries.json
